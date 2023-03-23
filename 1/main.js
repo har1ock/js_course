@@ -45,8 +45,24 @@ how_many_programs()
 //---1st ad task---
 function converter_km_to_milles(){
     const correlation = 0.621371;
-    const how_many_kms = ("Enter how many kilometers you want to :");
+    const how_many_kms = prompt("Enter how many kilometers you want to :");
     let miles = how_many_kms * correlation;
     alert(`The ${how_many_kms}km will be equal to ${miles}miles`)
 }
 converter_km_to_milles()
+
+//---2nd ad task---
+function how_many_time_to_end_of_a_day(){
+    const user_hours = prompt("Enter what time now in hours")
+    const user_minutes = prompt("Enter what time now in minutes")
+    if (user_minutes){
+        let current_minutes = 60 - user_minutes;
+        let current_hours = 23- user_hours;
+        alert(`Has left ${current_hours} hours and ${current_minutes} minutes`)
+    }else{
+        let current_hours = 24 - user_hours;
+        let current_minutes = 00;
+        alert(`Has left ${current_hours} hours and ${current_minutes} minutes`)
+    }
+}
+how_many_time_to_end_of_a_day()
