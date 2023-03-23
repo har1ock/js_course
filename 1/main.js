@@ -66,3 +66,16 @@ function how_many_time_to_end_of_a_day(){
     }
 }
 how_many_time_to_end_of_a_day()
+
+//---3rd ad task---
+function flip_number(){
+    const user_number = prompt("Enter 3djit numer");
+    let current_number = user_number % 100;
+    let first_number = current_number %10;
+    let second_number = (current_number - first_number)/10
+    let third_number = (user_number - current_number)/100
+    alert(`The flip number is ${first_number}${second_number}${third_number}`)
+
+}
+flip_number()
+
