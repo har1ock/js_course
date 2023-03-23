@@ -40,3 +40,13 @@ function how_many_programs(){
     alert(`Your flash drive can storage ${amount_of_files} files `);
 }
 how_many_programs()
+
+//---additional tasks---
+//---1st ad task---
+function converter_km_to_milles(){
+    const correlation = 0.621371;
+    const how_many_kms = ("Enter how many kilometers you want to :");
+    let miles = how_many_kms * correlation;
+    alert(`The ${how_many_kms}km will be equal to ${miles}miles`)
+}
+converter_km_to_milles()
